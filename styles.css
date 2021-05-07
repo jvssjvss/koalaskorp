@@ -1,0 +1,117 @@
+@import url(./css/reset.css);
+@import url(./css/grid.css);
+:root{
+    --verde:#618c74ff;
+    --amarillo:#baa460ff;
+    --blanco: whitesmoke;
+}
+body{
+    background-color: var(--blanco);
+    font-size: 3vh;
+
+    height: 200vh;
+    color: var(--verde);
+}
+.main__bigImg{
+    background-image:  url("./img/koala4life.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--amarillo);
+    display: none;
+    padding: 4vh;
+
+}
+a:hover{
+    color:var(--verde);
+    font-weight: bolder;
+
+}
+
+.main__texto, .main__texto2{
+    padding: 5%;
+
+}
+
+header, nav, .main__img1, .main__img2, .main__texto, .main__texto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__logo{
+    height: 15vh;
+    
+}
+.header__mobile{
+    background-color: var(--blanco);
+    position: sticky;
+    bottom: 0;
+    height: 20vh;
+    width: 100vw;
+    border-top: ridge 0.5vh var(--verde);
+    box-sizing: border-box;
+
+}
+.out{
+    display: none;
+}
+
+header:hover a, header:hover .out{
+    display: inline;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2vh;
+
+}
+h6{
+    justify-self: flex-end;
+    font-size: 2vh;
+    
+}
+
+
+
+.footer__redesSociales__logos{
+    height: 8vh;
+}
+
+/* intentando crear hamburguesa
+.body__hamburguesa{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--verde);
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:var(--blanco);
+    visibility: hidden;
+}
+
+.body__hamburguesa ul{
+    list-style: none;
+    text-align: center;
+}
+.body__hamburguesa li{
+    padding-bottom: 7vh;
+}
+
+
+
+#hamburguesa input:checked ~ .body__hamburguesa{
+    background-color: var(--verde);
+}
+*/
