@@ -84,13 +84,13 @@ h6{
     height: 8vh;
 }
 
-/* intentando crear hamburguesa
+
 .body__hamburguesa{
     height: 100vh;
     width: 100vw;
     background-color: var(--verde);
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0px;
     left: 0px;
     display: flex;
@@ -98,7 +98,7 @@ h6{
     align-items: center;
     justify-content: center;
     color:var(--blanco);
-    visibility: hidden;
+    display: none;
 }
 
 .body__hamburguesa ul{
@@ -110,8 +110,8 @@ h6{
 }
 
 
+.body__hamburguesa__salir{
+    height: 15%;
+    filter: brightness(200%);
 
-#hamburguesa input:checked ~ .body__hamburguesa{
-    background-color: var(--verde);
 }
-*/
